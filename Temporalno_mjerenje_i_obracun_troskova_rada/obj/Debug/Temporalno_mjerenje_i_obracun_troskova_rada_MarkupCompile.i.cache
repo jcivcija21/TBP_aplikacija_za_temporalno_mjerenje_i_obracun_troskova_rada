@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\jakov\source\repos\Temporalno_mjerenje_i_obracun_troskova_rada\Temporalno_mjerenje_i_obracun_troskova_rada\App.xaml
-1219584333
+10991616568
 
-6-793535042
-13-38814620
-MainWindow.xaml;
+401870291038
+31-1821189962
+MainWindow.xaml;Views\AuditLog.xaml;Views\EmployeeEditWindow.xaml;Views\ManageEmployees.xaml;Views\ManagePositions.xaml;Views\PayrollCalculation.xaml;Views\PositionEditWindow.xaml;Views\RecordWorkHours.xaml;Views\Reports.xaml;Views\WorkHoursEdit.xaml;
 
 True
 

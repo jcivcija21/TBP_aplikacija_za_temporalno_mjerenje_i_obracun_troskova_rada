@@ -10,6 +10,7 @@ namespace Temporalno_mjerenje_i_obracun_troskova_rada.DTOs
     {
         public int PozicijaId { get; set; }
         public string Naziv { get; set; }
+        public string Opis { get; set; }
         public decimal OsnovnaSatnica { get; set; }
     }
 }

@@ -1,0 +1,36 @@
+﻿<Window x:Class="Temporalno_mjerenje_i_obracun_troskova_rada.Views.WorkHoursEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Temporalno_mjerenje_i_obracun_troskova_rada.Views"
+        mc:Ignorable="d"
+        Title="WorkHoursEdit" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Employee:" Grid.Row="0" Grid.Column="0" Margin="10"/>
+        <ComboBox x:Name="EmployeeComboBox" Grid.Row="0" Grid.Column="1" Margin="10"/>
+
+        <Label Content="Date:" Grid.Row="1" Grid.Column="0" Margin="10"/>
+        <DatePicker x:Name="DatePicker" Grid.Row="1" Grid.Column="1" Margin="10"/>
+
+        <Label Content="Hours:" Grid.Row="2" Grid.Column="0" Margin="10"/>
+        <TextBox x:Name="HoursTextBox" Grid.Row="2" Grid.Column="1" Margin="10"/>
+
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button Content="Save" Click="SaveButton_Click" Width="75" Margin="5"/>
+            <Button Content="Cancel" Click="CancelButton_Click" Width="75" Margin="5"/>
+        </StackPanel>   
+    </Grid>
+</Window>

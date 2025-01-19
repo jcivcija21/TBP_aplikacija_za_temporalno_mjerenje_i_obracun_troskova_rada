@@ -13,5 +13,6 @@ namespace Temporalno_mjerenje_i_obracun_troskova_rada.DTOs
         public string Prezime { get; set; }
         public string Oib { get; set; }
         public DateTime DatumZaposlenja { get; set; }
+        public bool Aktivan { get; set; }
     }
 }

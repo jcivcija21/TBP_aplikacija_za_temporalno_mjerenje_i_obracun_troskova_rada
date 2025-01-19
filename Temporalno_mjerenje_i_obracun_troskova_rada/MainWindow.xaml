@@ -6,7 +6,16 @@
         xmlns:local="clr-namespace:Temporalno_mjerenje_i_obracun_troskova_rada"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <DockPanel>
+        <!-- Navbar -->
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Background="LightGray" Height="50">
+            <Button Content="Employees" Width="100" Margin="5" Command="{Binding ChangeViewCommand}" CommandParameter="ManageEmployees"/>
+            <Button Content="Positions" Width="100" Margin="5" Command="{Binding ChangeViewCommand}" CommandParameter="ManagePositions"/>
+            <Button Content="Work Hours" Width="100" Margin="5" Command="{Binding ChangeViewCommand}" CommandParameter="RecordWorkHours"/>
+            <Button Content="Payroll" Width="100" Margin="5" Command="{Binding ChangeViewCommand}" CommandParameter="PayrollCalculation"/>
+            <Button Content="Audit Log" Width="100" Margin="5" Command="{Binding ChangeViewCommand}" CommandParameter="AuditLog"/>
+        </StackPanel>
+
+        <ContentControl Content="{Binding CurrentView}" />
+    </DockPanel>
 </Window>

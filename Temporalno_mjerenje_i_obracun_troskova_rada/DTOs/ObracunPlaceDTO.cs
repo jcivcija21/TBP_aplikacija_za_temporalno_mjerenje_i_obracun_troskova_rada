@@ -9,6 +9,7 @@ namespace Temporalno_mjerenje_i_obracun_troskova_rada.DTOs
     public class ObracunPlaceDTO
     {
         public int ObracunId { get; set; }
+        public int ZaposlenikId { get; set; }
         public decimal Bruto { get; set; }
         public decimal Doprinosi { get; set; }
         public decimal Porez { get; set; }
